@@ -1,9 +1,38 @@
+body {
+    background-color: #F5F7FB;
+}
+
 .input-group {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    width: 94%;
+}
+
+.d-flex {
+    display: flex;
     width: 100%;
+}
+
+.img-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #5AE3D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid, .img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .mt-5 {
@@ -59,6 +88,80 @@
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
     cursor: pointer;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.border-0 {
+    border: 0!important;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.border-top {
+    border-top: 2px solid #5AE3D2;
+}
+
+.border-left {
+    border-left: 2px solid #5AE3D2;
+}
+
+.m-0 {
+    margin: .25rem;
+}
+
+.mt-2, .my-2 {
+    margin: .8rem 0rem;
+}
+
+.ml-2, .mx-2 {
+    margin-left: 1rem!important;
+}
+
+.media-body {
+    flex: 1 1;
+}
+
+.text-muted {
+    color: #C6CADC;
+}
+
+.text-primary {
+    color: #648BFE;
+}
+
+.text-black-50 {
+    color: #606060;
+}
+
+.text-black-20 {
+    color: #a09d9d;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: .7rem 1.25rem;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
