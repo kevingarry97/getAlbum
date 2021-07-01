@@ -33,12 +33,12 @@ function App() {
             <div key={key} className="col-lg-4 my-2">
               <div className="card border-0 shadow-sm">
                 <div className="card-body">
-                  <div className="media">
+                  <div className="media align-items-center">
                     <div className="img-box">
-                      <img src={post.url} className="img-fluid" alt="" />
+                      <img src={post.thumbnailUrl} className="img-fluid" alt="" />
                     </div>
                     <div className="media-body ml-2">
-                      
+                      <h4><small className="text-black-50">{post.title}</small></h4>
                     </div>
                   </div>
                 </div>
