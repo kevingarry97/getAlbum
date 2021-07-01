@@ -24,17 +24,32 @@ function App() {
       <div className="input-group mt-5">
         <SearchBox value={searchQuery} onChange={handleChange} />
         <div className="input-group-append">
-          <button className="input-group-text" onClick={handleSearch}><small>Get Album Photos By Id</small></button>
+          <button className="input-group-text border-0" onClick={handleSearch}><small>Get Album Photos By Id</small></button>
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4">
-          <div className="card border-0 shadow-sm">
-            <div className="media">
-
+        {posts.length != 0 ? 
+          posts?.map((post, key) => (
+            <div key={key} className="col-lg-4 my-2">
+              <div className="card border-0 shadow-sm">
+                <div className="card-body">
+                  <div className="media">
+                    <div className="img-box">
+                      <img src={post.url} className="img-fluid" alt="" />
+                    </div>
+                    <div className="media-body ml-2">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          ))
+        : (
+          <div className="d-flex justify-content-center">
+            <h2 className="font-bold text-black-20">No Post Yet!!</h2>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
